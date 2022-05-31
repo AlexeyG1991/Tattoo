@@ -1,0 +1,611 @@
+/* Font connection */
+
+@font-face {
+  font-family: 'Jaapokkisubtract';
+  src: url('../fonts/JaapokkisubtractRegular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/JaapokkisubtractRegular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/JaapokkisubtractRegular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/JaapokkisubtractRegular.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/JaapokkisubtractRegular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/JaapokkisubtractRegular#svgFontName') format('svg');
+  /* Legacy iOS */
+}
+
+/* Specification */
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #000;
+
+}
+
+div,
+p,
+span,
+a,
+input,
+button {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.full_height {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700 !important;
+}
+
+img {
+  width: 100%;
+}
+
+.grey-text {
+  color: #707070;
+}
+
+
+/* Hero section */
+.header {
+  background: #000 url(../img/bg1.jpg) no-repeat right bottom / cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.header .container {
+  height: 100vh;
+}
+
+.header_two {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.header_port {
+  background: #000;
+  color: #fff;
+}
+
+.background_white {
+  background-color: #fff;
+}
+
+.background_black {
+  background-color: #000;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.logo {
+  overflow: hidden;
+  position: relative;
+  height: 90px;
+  margin-top: 60px;
+}
+
+.logo img {
+  position: absolute;
+  top: 53%;
+  left: 49%;
+  transform: translate(-51%, -47%);
+  width: 300%;
+  height: 300%;
+}
+
+.hoverrable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hoverrable:hover {
+  transform: scale(1.2);
+}
+
+.scrolling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #fff;
+  background-color: #000;
+  height: 100vh;
+  width: 80px;
+  z-index: 5;
+}
+
+.scroll:hover {
+  transform: scale(1.2);
+  color: #0000a0;
+}
+
+.network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.network .net {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  width: 40px !important;
+  height: 40px !important;
+  cursor: pointer;
+}
+
+.network .net:hover {
+  transform: scale(1.2);
+}
+
+#footer .network {
+  display: flex;
+  position: initial;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tatoo-master-img1 {
+  background: url(../img/eugene-chystiakov-bg.png) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.tatoo-master-img2 {
+  background: url(../img/julia-giacomini-bg.png) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------------about-style----------------- */
+.text {
+  margin: 20px auto 40px 15px;
+}
+
+.text h6 {
+  margin-bottom: 3px;
+}
+
+.text p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.master p {
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.master h6 {
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.primrose {
+  position: absolute;
+  border: 3px solid #fff;
+  width: 300%;
+  height: 70%;
+  margin-left: -180%;
+  margin-right: auto;
+}
+
+.output {
+  background: #000;
+  color: #fff !important;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  bottom: 5%;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.output:hover {
+  color: #42FF19 !important;
+}
+
+/* ------------------portfolio----------------- */
+.port-lio {
+  padding-bottom: 50px;
+}
+
+.types-tattoo {
+  margin-top: 60px;
+  margin-left: 10%;
+  display: flex;
+}
+
+.types-tattoo a {
+  color: #fff;
+  margin-right: 50px;
+}
+
+.types-tattoo a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.types-tattoo a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all .3s;
+}
+
+.types-tattoo a:hover::after {
+  transform: scale(1);
+}
+
+.humburger {
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 68px;
+  top: 8%;
+}
+
+.menu-btn {
+  position: fixed;
+  right: 20px;
+  top: 8%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+
+.menu-btn_active span:after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+
+.menu-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.menu-nav a:hover {
+  text-decoration: none;
+  color: #000;
+  transform: scale(1.2);
+}
+
+.menu-nav {
+  transition: 0.2s;
+  transform: scaleX(0) translateX(0%);
+  transform-origin: right center;
+  opacity: 0;
+  visibility: hidden;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  padding-right: 33px;
+  padding-left: 33px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.menu-nav_active {
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.tatoo-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.join-btn {
+  color: #42FF19;
+  border: 1px solid #42FF19;
+  border-radius: 20px;
+  background-color: #000;
+  padding: 10px 60px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.join-btn:hover {
+  background-color: #42FF19;
+  color: #000;
+}
+
+.grid_cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid_card {
+  border: 3px solid #fff;
+  width: 190px;
+  height: 250px;
+  padding: 20px;
+  position: relative;
+}
+
+.grid_card p {
+  font-size: 14px;
+}
+
+.card_wrapper {
+  width: 33%;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.we_better .service__icon {
+  color: #42FF19;
+  font-size: 25px;
+}
+
+.service__icon {
+  color: #000;
+}
+
+.label {
+  position: absolute;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  right: 0;
+  bottom: 0;
+  padding: 0 2px;
+}
+
+.about_studio {
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+
+.about_studio:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.view_more {
+  border: 3px solid #000;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+
+.view_more:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.shadow_card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.shadow_card h5 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.shadow_card_master {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shadow_card_master:hover {
+  box-shadow: 0px 6px 15px 1px rgba(0, 0, 0, 0.50);
+}
+
+.divider {
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: 10px auto;
+  background-color: #707070;
+}
+
+.ancor_link i {
+  font-size: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.shadow_card_master:hover .ancor_link i {
+  color: #42FF19;
+}
+
+.shadow_card_master a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  text-decoration: none !important;
+}
+
+.shadow_card_master:hover a {
+  color: #000;
+}
+
+.five-input {
+  min-height: 77px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 40px;
+  outline: none;
+}
+
+.select {
+  background-color: #fff;
+}
+
+::placeholder {
+  font-size: 19px;
+  letter-spacing: 8px;
+  color: #b9b9ba;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #F07575;
+  background-position: center right;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 19px;
+  letter-spacing: 8px;
+  color: #b9b9ba;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+#footer {
+  padding: 50px 0;
+  position: relative;
+  color: #fff;
+}
+
+#footer .logo {
+  display: none;
+}
+
+#footer .logo {
+  margin-top: -40px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+#footer .network {
+  display: none;
+}

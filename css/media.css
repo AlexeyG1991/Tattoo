@@ -1,0 +1,219 @@
+/* 1601 - 1920 px */
+@media screen and (max-width: 1920px) {}
+
+/* 1369 - 1600 px */
+@media screen and (max-width: 1600px) {}
+
+/* 961 - 1368 px */
+@media screen and (max-width: 1368px) {
+    .offer__bg {
+        font-size: 200px;
+    }
+
+    .offer__title {
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+
+    .offer__text {
+        margin-left: 150px;
+    }
+
+    .offer__btn {
+        margin-left: 240px;
+    }
+
+    .next {
+        font-size: 200px;
+        width: 220px;
+        left: 75%;
+    }
+
+    .brah {
+        display: none;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service__item {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .primrose {
+        height: 95%;
+        width: 280%;
+    }
+}
+
+/* 769 - 960 px */
+@media screen and (max-width: 960px) {
+    .next {
+        display: none;
+    }
+
+    .credits {
+        flex-direction: column;
+    }
+
+    .credits>* {
+        margin-bottom: 40px;
+    }
+
+    .humburger {
+        right: 43px;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        height: unset;
+        border-radius: 20px;
+    }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+    .offer__bg {
+        font-size: 100px;
+        position: relative;
+    }
+
+    .header {
+        background: #000;
+    }
+
+    .header,
+    .header_two {
+        height: auto;
+    }
+
+    .header .container,
+    .header_two .container {
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .hamburger {
+        position: relative;
+        top: auto;
+        right: auto;
+        float: none;
+        margin-top: 14px;
+    }
+
+    .offer {
+        position: relative;
+        left: auto;
+        top: auto;
+        padding-top: 300px;
+    }
+
+    .offer__title {
+        font-size: 35px;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .offer__text {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .offer__btn {
+        margin-left: 0;
+    }
+
+    .scrolling {
+        display: none;
+    }
+
+    .primrose {
+        display: none;
+    }
+
+    .master {
+        margin-top: 15px;
+    }
+
+    .about-style {
+        margin-left: 5%;
+    }
+
+    .tatoo-master-img1,
+    .tatoo-master-img2 {
+        height: 80%;
+        width: 80%;
+    }
+
+    .full_height {
+        max-height: 400px;
+    }
+
+    .types-tattoo {
+        font-size: 14px;
+    }
+
+    .five-input {
+        font-size: 25px;
+    }
+
+    ::placeholder {
+        letter-spacing: 2px;
+    }
+
+    select {
+        letter-spacing: 2px;
+    }
+
+    #footer {
+        padding: 20px 0;
+    }
+
+    #footer .logo {
+        display: block;
+        cursor: pointer;
+    }
+
+    #footer .network {
+        display: block;
+    }
+
+}
+
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+    .section-title__title {
+        font-size: 60px;
+    }
+
+    #footer .network {
+        margin: 20px 0;
+    }
+
+    .types-tattoo {
+        font-size: 10px;
+    }
+
+    .types-tattoo a {
+        margin-right: 25px;
+        margin-left: 5px;
+    }
+
+}
